@@ -1,0 +1,37 @@
+/* BUTTON HOVER EFFECT */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+}
+
+/* BOX ANIMATION */
+@keyframes pulse {
+    0% { transform: scale(1); background-color: #e74c3c; }
+    50% { transform: scale(1.2); background-color: #f1c40f; }
+    100% { transform: scale(1); background-color: #e74c3c; }
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    animation: pulse 2s infinite;
+}
+
+/* PART 3*/
+
+/* Animation class to trigger via JS */
+.animate {
+    animation: pulse 1s forwards;
+}
